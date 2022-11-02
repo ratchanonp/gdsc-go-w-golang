@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "8c062390-d132-4fc9-adf7-b1043102fb35",
+		"name": "GoFiber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11766649"
+	},
+	"item": [
+		{
+			"name": "Param",
+			"item": [
+				{
+					"name": "Wildcard Params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/test-params/test/2/3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"test-params",
+								"test",
+								"2",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/resturant/1/food/123",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"resturant",
+								"1",
+								"food",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "getBooks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/books",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/books/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"title\": \"Test\",\n        \"description\": \"test\",\n        \"author\": {\n            \"id\": 1,\n            \"name\": \"Paulo Coelho\"\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/books",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBooks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/books/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"books",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basic Method",
+			"item": [
+				{
+					"name": "Hello World",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Method",
+			"item": [
+				{
+					"name": "Basic Route",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/new-route",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"new-route"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basic Route",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/new-route",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"new-route"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basic Route",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/new-route",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"new-route"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basic Route",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/new-route",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"new-route"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basic Route",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/new-route",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"new-route"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Download",
+			"item": [
+				{
+					"name": "Download",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/download",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"download"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
